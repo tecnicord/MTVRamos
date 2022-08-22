@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FliaRamos</title>
+</head>
+<body>
+La familia Ramos vive en Cordoba
+<br>
+El nombre del padre de la familia es: {{ Padre }}
+<br>
+El nombre de la madre de la familia es: {{ Madre }}
+<br>
+La edades de sus integrantes son: {{ lista }}
+<br>
+{% for numero in lista %}
+    {% if numero == 34 %}
+        La edad de Tomas es 34
+        {% elif numero == 38 %}
+        La edad de Mateo es 38
+        {% elif numero == 62 %}
+        La edad de Teresita es 62
+        {% elif numero == 64 %}
+        La edad de Miguel es 64
+    {% endif %}
+     <br>
+
+{% endfor %}
+La fecha de ejecución es: {{ ahora }}
+<br>
+
+
+</body>
+</html>
